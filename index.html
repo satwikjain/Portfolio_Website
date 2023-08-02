@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/70cc659ae8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#services">Hobbies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>
+                        Hi, I am <span>Satwik</span> <br>Jain from LNMIIT.
+                    </h1>
+                </div>
+            </div>
+        </div>
+<!------------- -----about------------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="kala/IMG_6394 copy.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            With a deep passion for software development and an unwavering commitment to excellence, 
+                            I am an accomplished C++ coder with a proven track record of success. 
+                            Having completed over 350 problem-solving exercises on LeetCode and GeeksforGeeks, 
+                            I possess a strong command of C++ and have honed my skills in data structures and algorithms. 
+                            I excel in collaborative environments, leveraging my strong communication skills and teamwork 
+                            to deliver outstanding results.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <!-- <p class="tab-links" onclick="opentab('Projects')">Projects</p> -->
+                            <p class="tab-links" onclick="opentab('education')">Education </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Data Structures and Algorithms</span><br>Solved 350+ Problems on LeetCode and GeeksforGeeks</li>
+                                <li><span>FrontEnd Development</span><br>Know Basic HTML and CSS</li>
+                                <li><span>Software Development</span><br>Have Expertise in Developing Audio Plugin from JUCE Framework</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Projects">
+                            <ul>
+                                <li><span>Simple EQ</span><br>Created Simple EQ plugin using JUCE framework, leveraging music passion and C++ expertise. Enhanced audio control with user-friendly interface,
+                                    7 parameters, and 3 Bypass buttons.
+                                    </li>
+                                <li><span>Portfolio Website</span><br>Simple Portfolio Website leveraging CSS and HTML Knowledge</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - Present</span><br>B.Tech. in ECE from The LNM Institute of Information Technology</li>
+                                <li><span>2019</span><br>Class 12th from B.V.B. Vidyasharam - 89%</li>
+                                <li><span>2018</span><br>Class 10th from B.V.B. Vidyasharam - 8.0 CGPA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ------------------------------Portfolio--------------------------------- -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Simple EQ.png">
+                        <div class="layer">
+                            <h3>Simple EQ</h3>
+                            <p>Created Simple EQ plugin using JUCE framework, leveraging music passion and C++ expertise. Enhanced audio control with user-friendly interface,
+                                7 parameters, and 3 Bypass buttons.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="work">
+                        <img src="Images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>This app connects you to the talented people around the world.
+                                Download it from the play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>This app connects you to the talented people around the world.
+                                Download it from the play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <a href="#" class="btn">See more</a> -->
+            </div>
+        </div>
+
+<!-- -------------------------------services----------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music Production</h2>
+                <p>Have Produced Several Songs on Computer by using DAW</p>
+                <a href="https://www.youtube.com/@satwikjain6455">YT Link</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-people-group"></i>
+                <h2>Team Management</h2>
+                <p>Coordinator of Capriccio - The Music Club(LNMIIT)</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Singer</h2>
+                <p>Have Participated in Various Band Performances</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------------Contact--------------------------------- -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>satwikjain25@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>7610027910</p>
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+                            <a href="https://www.linkedin.com/in/satwikjain2001/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text"  name="Name"  placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ⓒ Satwik. Thank You <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+
+<!-- ----------------------JavaScript Section--------------------------- -->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-170px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw6l6sMDthFYDGvJiJI-Mk4QRAsXJ7a317h_csyAOXs6b2mpUP9mmsDoEJz-7o-V5aa/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        
+    </body>
+</html>
