@@ -188,7 +188,9 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-
+.Hobbies-list div a i{
+    font-size: 16px;
+}
 /* ------------project----------- */
 
 #project{
